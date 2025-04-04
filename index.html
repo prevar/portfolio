@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preeti Varshney</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+  </head>
+  <body>
+    <div>
+      <header class="header w-100">
+        <nav
+          class="navbar fixed-top navbar-expand-md navbar-dark bg-dark text-white ps-5 w-100"
+        >
+          <a class="navbar-brand" href="#">Preeti Varshney</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbartarget"
+            aria-controls="navbartarget"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end pe-5"
+            id="navbartarget"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#top">About Me <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div id="top" class="filler"></div>
+        <!--Added to account for the fixed top so about section doesnt get hidden-->
+
+        <!--about section-->
+        <div
+          id="about"
+          class="d-flex justify-content-center align-items-center mt-5"
+        >
+          <div class="container mt-3">
+            <img
+              src="images/preeti_profile.jpg"
+              class="mx-auto d-block"
+              style="width: 60%"
+            />
+          </div>
+          <div class="container mt-3 mx-auto justify-content-center  text-white ">
+            <h3 id="typing-text" class="d-flex text-primary justify-content-center"></h3>
+            <p class="d-flex justify-content-center">
+               
+              A highly skilled and experienced full-stack developer, I have over 10 years of experience building web applications. 
+              Having worked on a multitude of frontend ( HTML, CSS, Javascript, React, Bootstrap) and backend technologies (Java, Node JS, MongoDB, Mysql), I have what it takes to handle end to end development of a software product.  
+              </p>
+              <br/>
+              <p>Even though, I took a break from full time work due to personal reasons, I continued to work on smaller part-time/ freelance/ volunteer jobs to keep in touch with technology. I recently completed a professional certification course in MERN (MongoDB, es6, React and Node JS)
+              from MIT xPro. which gave me a chance to work on the latest industry best practices related to Cloud computing (AWS, Render), Containerization (docker) , Version control (GIT), CI/CD, User authentication (OAuth) and testing tools (Jest).
+              </p>
+              <br/>
+              <p>My experience includes working with companies in software consultancy, logistics, supply chain management, healthcare, content management and website development. I am confident that my experience coupled with the latest certification has equipped me to help organizations achieve their goals.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!--projects-->
+     
+      <section id="projectsection" class="portfolio py-2 bg-light">
+        <div id="projects" class="filler"></div>
+        <div class="container pb-3">
+          <div class="text-center my-2">
+            <h2 class="text-upperclass fw-bold">My Projects</h2>
+            <hr class="w-25 mx-auto" />
+            <p class="lead">Click on the images below to see a preview of the projects</p>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div
+              id="myCarousel"
+              class="carousel carousel-dark slide w-50"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://bankingrepoclientside.onrender.com">
+                  <img
+                    class="img-fluid"
+                    src="images/banking.png"
+                    alt="First slide"
+                  /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://prevar.github.io/SHAREDprojects/GitPortfolio/pacman/pacman.html">
+                  <img
+                    class="img-fluid"
+                    src="images/pacman2.png"
+                    alt="Second slide"
+                  />
+                </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://prevar.github.io/SHAREDprojects/GitPortfolio/bustracker/">
+                  <img
+                    class="img-fluid"
+                    src="images/bustracker.png"
+                    alt="Third slide"
+                  />
+                </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://prevar.github.io/SHAREDprojects/GitPortfolio/eyemovement/">
+                  <img
+                    class="img-fluid"
+                    src="images/eyes.png"
+                    alt="Fourth slide"
+                  />
+                </a>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact-->
+      <section id="contact" class="contact text-bg-dark bg-gradient py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="text-center mb-2">
+                <h2 class="text-upperclass fw-bold">Get in Touch!</h2>
+                <hr class="w-25 mx-auto" />
+                <!--h3 class="mb-4">Id love to hear from you</h3-->
+                <p class="lead">
+                  I would love to hear from you.  <a href="mailto:preeti.varshney@gmail.com" alt="preeti.varshney@gmail.com">Drop me a line </a>if you have any questions or would like me to work with you
+                </p>
+                <div class="social d-flex gap-3 justify-content-center">
+                  <a href="https://www.linkedin.com/in/preeti-varshney-4261495/">
+                    <i class="fab fa-linkedin fa-2x text-white"></i>
+                  </a>
+                  <a href="https://github.com/prevar">
+                    <i class="fab fa-github fa-2x text-white"></i>
+                  </a>
+                  <!--a href="#">
+                    <i class="fab fa-facebook fa-2x text-white"></i>
+                  </a-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="js/lightbox-plus-jquery.js"></script>
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
